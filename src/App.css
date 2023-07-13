@@ -1,0 +1,30 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.rotate-infinite {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#mobile-nav {
+    filter: drop-shadow(0px -2px 10px rgba(255, 255, 255, 0.8));
+}
